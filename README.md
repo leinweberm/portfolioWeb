@@ -1,2 +1,2 @@
 # portfolioWeb
-My portfolio websites
+Moje osobní webová prezentace dělaná v Native React.js
