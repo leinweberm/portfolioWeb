@@ -16,8 +16,8 @@ export const PageContainer = styled.div`
 export const AboutGrid = styled.div`
     top: 0;
     display: grid;
-    grid-template-columns: auto 60%;
-    grid-template-rows: auto auto;
+    grid-template-columns: 300px calc(100% - 300px);
+    grid-template-rows: 300px calc(100% - 300px);
     grid-template-areas:
         'a b'
         'c b';
@@ -81,7 +81,7 @@ export const TechStack = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
     min-height: 50px;
@@ -94,11 +94,11 @@ export const TechStack = styled.div`
 export const TechStackItem = styled.div`
     display: flex;
     flex-direction: column;
-    height: 120px;
-    width: 100px;
+    height: 105px;
+    width: 70px;
     margin: 10px;
     justify-content: space-between;
-    background-color: red;
+    text-align: center;
 `;
 
 export const H1 = styled.h1`

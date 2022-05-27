@@ -29,7 +29,10 @@ export default function About() {
             </p>
             <h3 style={{fontSize: "18px", marginTop: "20px", marginBottom: "10px"}}>Tech Stack</h3>
             <TechStack>
-              <TechStackItem></TechStackItem>
+              <TechStackItem>
+                <img src={require('../../assets/pictures/javaScriptLogo.jpg')} alt="logo JavaScript" />
+                <p>JavaScript</p>
+              </TechStackItem>
               <TechStackItem></TechStackItem>
               <TechStackItem></TechStackItem>
               <TechStackItem></TechStackItem>
