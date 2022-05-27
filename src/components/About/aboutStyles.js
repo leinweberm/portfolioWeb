@@ -8,7 +8,6 @@ export const PageContainer = styled.div`
    padding: 40px 20px;
    flex-direction: column;
    align-items: center;
-   height: auto;
    width: 100%;
    background-color: ${palette.darkTurquoise};
    text-align: center;
@@ -81,24 +80,20 @@ export const TechStack = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    min-height: 50px;
     border: 1px solid ${palette.darkTurquoise};
-    border-radius: 0 0 30px 0;
-    @media (max-width: 768px) {
-            border-radius: 0 0 30px 30px;
-        }
 `;
 export const TechStackItem = styled.div`
     display: flex;
     flex-direction: column;
-    height: 105px;
-    width: 70px;
+    width: 50px;
     margin: 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
     text-align: center;
+`;
+export const CvButton = styled.button`
+
 `;
 
 export const H1 = styled.h1`
