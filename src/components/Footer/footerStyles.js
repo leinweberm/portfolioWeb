@@ -63,18 +63,18 @@ export const FooterItem = styled.div`
 `;
 export const H1 = styled.h1`
    color: ${palette.darkTurquoise};
-   font-size: 13px;
+   font-size: 15px;
 `;
 export const B = styled.b`
    color: ${palette.lightGrey};
-   font-size: 11px;
+   font-size: 13px;
 `;
 export const P = styled.p`
    color: ${palette.lightGrey};
-   font-size: 11px;
+   font-size: 13px;
 `;
 export const NewTabLink = styled.a`
    color: ${palette.lightGrey};
-   font-size: 11px;
-   text-decoration: none;
+   font-size: 13px;
+   text-decoration: underline;
 `;
