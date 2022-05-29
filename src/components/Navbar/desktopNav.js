@@ -9,10 +9,10 @@ export default function DesktopNav() {
             <h1>Leinweber</h1>
          </BrandName>
          <MenuList>
-            <MenuItem><MenuLink to="/">Home</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/about">About</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/gallery">Gallery</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/contact">Contact</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/">DOMŮ</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/about">INFO</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/gallery">PROJEKTY</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/contact">KONTAKT</MenuLink></MenuItem>
          </MenuList>
       </Navi>
    </>

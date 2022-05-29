@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: white;
   /* overflow: hidden; */
-  display: block;
+  /* display: block; */
   background-color: #0B0C10;
 }
 p {

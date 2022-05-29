@@ -14,7 +14,7 @@ export default function MobileNav() {
                <MobMenuList>
                   <MobMenuItem><MobMenuLink to="/" onClick={() => {setIsNavActive(!isNavActive);}}>HOME</MobMenuLink></MobMenuItem>
                   <MobMenuItem><MobMenuLink to="/about" onClick={() => {setIsNavActive(!isNavActive);}}>ABOUT</MobMenuLink></MobMenuItem>
-                  <MobMenuItem><MobMenuLink to="/gallery" onClick={() => {setIsNavActive(!isNavActive);}}>GALLERY</MobMenuLink></MobMenuItem>
+                  <MobMenuItem><MobMenuLink to="/gallery" onClick={() => {setIsNavActive(!isNavActive);}}>PROJECTS</MobMenuLink></MobMenuItem>
                   <MobMenuItem><MobMenuLink to="/contact" onClick={() => {setIsNavActive(!isNavActive);}}>CONTACT</MobMenuLink></MobMenuItem>
                </MobMenuList >
             }

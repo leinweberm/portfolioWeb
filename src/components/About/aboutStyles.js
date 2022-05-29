@@ -79,17 +79,16 @@ export const TechStack = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    border: 1px solid ${palette.darkTurquoise};
 `;
 export const TechStackItem = styled.div`
     display: flex;
     flex-direction: column;
     width: 50px;
-    margin: 10px;
-    justify-content: flex-start;
+    margin: 20px;
+    justify-content: center;
     text-align: center;
 `;
 export const CvButton = styled.button`

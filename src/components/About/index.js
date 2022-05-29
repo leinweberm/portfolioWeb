@@ -22,7 +22,7 @@ export default function About() {
             
           </AboutItem>
           <AboutItem>
-            <p style={{fontSize: "18px", marginTop: "5px", alignSelf: "flex-start"}}>Tech Stack</p>
+            <p style={{fontSize: "18px", marginTop: "5px", alignSelf: "center"}}>Tech Stack</p>
             <TechStack>
               <TechStackItem>
                 <img src={require('../../assets/pictures/javaScriptLogo.jpg')} alt="logo JavaScript" />
