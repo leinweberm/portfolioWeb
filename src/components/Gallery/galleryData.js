@@ -6,6 +6,7 @@ import zmrzkaRolka from '../../assets/pictures/projects/zmrzkaRolka.jpg';
 import mujWeb from '../../assets/pictures/projects/mujWeb.jpg';
 import nestJsProject from '../../assets/pictures/projects/nestJsProject.jpg';
 import reactJsProject from '../../assets/pictures/projects/reactJsProject.jpg';
+import ceskoslovensko2018 from '../../assets/pictures/projects/ceskoslovensko2018.jpg';
 
 export const ProjectsDatabase = [
    {
@@ -23,8 +24,8 @@ export const ProjectsDatabase = [
       description: 'Hukvaldská stezka na počest L. Jenáčka',
       type: 'design',
       image: stezkaLeosJanacek,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: '',
+      demo: 'https://www.behance.net/gallery/36428143/NAUCNA-STEZKA-LEOS-JANACEK-OCIMA-DETI'
    },
    {
       id: 3,
@@ -32,8 +33,8 @@ export const ProjectsDatabase = [
       description: 'kulturní festival v Ostravě',
       type: 'design',
       image: kulturpunkt1,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: '',
+      demo: 'https://www.behance.net/gallery/36427411/OSTRAU-DER-KULTURPUNKT-2016'
    },
    {
       id: 4,
@@ -41,8 +42,8 @@ export const ProjectsDatabase = [
       description: 'první web dělaný v kurzu (html/css)',
       type: 'coding + design',
       image: prvniWeb,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: 'https://github.com/leinweberm/firstWebsite',
+      demo: 'http://leinweber.codes/'
    },
    {
       id: 5,
@@ -50,8 +51,8 @@ export const ProjectsDatabase = [
       description: 'kompletní branding',
       type: 'design',
       image: zmrzkaRolka,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: '',
+      demo: 'https://www.zmrzkaarolka.cz/'
    },
    {
       id: 6,
@@ -59,8 +60,8 @@ export const ProjectsDatabase = [
       description: 'moje online webová React prezentace',
       type: 'coding + design',
       image: mujWeb,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: 'https://github.com/leinweberm/portfolioWeb',
+      demo: ''
    },
    {
       id: 7,
@@ -68,8 +69,8 @@ export const ProjectsDatabase = [
       description: 'prihlaseni, registrace uživatelského účtu',
       type: 'coding',
       image: nestJsProject,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: '',
+      demo: ''
    },
    {
       id: 8,
@@ -77,8 +78,17 @@ export const ProjectsDatabase = [
       description: 'my first simple react application',
       type: 'coding',
       image: reactJsProject,
-      gitHub: 'link',
-      demo: 'link'
+      gitHub: '',
+      demo: ''
+   },
+   {
+      id: 9,
+      title: 'Československo 2018',
+      description: 'grafika a ilustrace pro kulturní festival',
+      type: 'design',
+      image: ceskoslovensko2018,
+      gitHub: '',
+      demo: 'https://www.artstation.com/artwork/Z5gk9x'
    },
 ];
 // export default ProjectsDatabase;

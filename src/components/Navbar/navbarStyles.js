@@ -13,7 +13,7 @@ export const Navi = styled.nav`
    z-index: 10;
    justify-content: space-evenly;
    align-items: center;
-   background-color: ${palette.darkGrey};
+   background-color: ${palette.almostBlack};
 
    @media (max-width: 500px) {
       display: none;
@@ -33,7 +33,7 @@ export const MenuItem = styled.li`
 `;
 export const MenuLink = styled(Link)`
    text-decoration: none;
-   color: ${palette.lightTurquoise};
+   color: ${palette.lightGrey};
    font-size: 16px;
 
    &:hover {
@@ -63,7 +63,7 @@ export const MobNavi = styled.nav`
    z-index: 10;
    justify-content: space-between;
    align-items: center;
-   background-color: ${palette.darkGrey};
+   background-color: ${palette.almostBlack};
    display: none;
 
    @media (max-width: 500px) {
@@ -74,7 +74,7 @@ export const MobNavi = styled.nav`
 export const Hamburger = styled(RiMenuFill)`
    height: 50px;
    width: 50px;
-   color: ${palette.lightTurquoise};
+   color: ${palette.lightGrey};
    margin-right: 20px;
    cursor: pointer;
 `;
@@ -87,7 +87,7 @@ export const MobMenuList = styled.ul`
    top: 70px;
    height: 400px;
    width: 100%;
-   background-color: ${palette.darkGrey};
+   background-color: ${palette.almostBlack};
    z-index: -1;
 `;
 export const MobMenuItem = styled.li`
@@ -95,7 +95,7 @@ export const MobMenuItem = styled.li`
 `;
 export const MobMenuLink = styled(Link)`
    text-decoration: none;
-   color: ${palette.lightTurquoise};
+   color: white;
    font-size: 20px;
 `;
 //END OF MOBILE VERSION

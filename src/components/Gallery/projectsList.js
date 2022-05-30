@@ -12,8 +12,8 @@ export default function PokusList({ projects, filter }) {
                   </img>
                </ItemImage>
                <LinkGrid>
-                  <LinkButton onClick={() => {window.open(project.gitHub, "_blank")}}>GitHub</LinkButton>
-                  <LinkButton onClick={() => {window.open(project.demo, "_blank")}}>Demo</LinkButton>
+                  { project.gitHub && <LinkButton onClick={() => {window.open(project.gitHub, "_blank")}}>GitHub</LinkButton>}
+                  { project.demo && <LinkButton onClick={() => {window.open(project.demo, "_blank")}}>Ukázka</LinkButton>}
                </LinkGrid>
                <ItemTitle>{ project.title }</ItemTitle>
                <ItemDescription>{ project.description }</ItemDescription>

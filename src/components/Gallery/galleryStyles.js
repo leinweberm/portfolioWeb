@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
 import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
-import { Link } from "react-router-dom";
 
 export const GalleryContainer = styled.div`
    display: flex;
@@ -47,6 +46,8 @@ export const GalleryItem = styled.div`
       'links'
       'title'
       'description';
+   -webkit-box-shadow: 1px 15px 15px 0px rgba(0,0,0,0.35); 
+   box-shadow: 1px 15px 15px 0px rgba(0,0,0,0.35);
 `;
 export const ItemType = styled.div`
    grid-area: type;
@@ -167,38 +168,35 @@ export const FilterButtonActive = styled.button`
    }
 `;
 export const LinkGrid = styled.div`
-   display: grid;
+   display: flex;
    align-self: center;
    justify-self: center;
    flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
+   justify-content: center;
+   align-items: flex-start;
    height: 25px;
    width: 160px;
-   grid-template-columns: 1fr 1fr;
-   grid-template-areas:
-      'git'
-      'demo';
-   gap: 10px;
    margin-bottom: 5px;
 `;
 export const LinkButton = styled.button`
-   margin: 0;
-   padding: 3px;
    display: flex;
+   width: 75px;
+   height: 19px;
    align-items: center;
    justify-content: center;
-   height: 100%;
+   text-decoration: none;
+   font-size: 10px;
+   font-weight: 400;
+   color: white;
    background-color: rgba(255,255,255,0.1);
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(8px);
    border: 1px solid rgba(255,255,255,0.3);
    cursor: pointer;
-   font-size: 10px;
-   font-weight: 400;
-   color: white;
-   text-decoration: none;
    &:hover {
       background-color: rgba(255,255,255,0.5);
+   }
+   &:nth-child(2){
+      margin-left: 10px;
    }
 `;

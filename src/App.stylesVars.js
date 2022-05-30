@@ -1,6 +1,7 @@
 import styled from "styled-components";
 //color scheme
 export const almostBlack = '#0B0C10';
+export const almostBlackOp = 'rgba(11,12,16,0.5)';
 export const darkGrey = '#1F2833';
 export const lightGrey = '#C5C6C7';
 export const darkTurquoise = '#45A29E';
