@@ -10,7 +10,7 @@ import git from '../../assets/pictures/techStack/git.svg';
 import gitHub from '../../assets/pictures/techStack/gitHub.svg';
 import vsCode from '../../assets/pictures/techStack/vsCode.svg';
 
-export const TechStack = [
+export const AboutDatabase = [
    {
       id: 1,
       name: 'JavaScript',

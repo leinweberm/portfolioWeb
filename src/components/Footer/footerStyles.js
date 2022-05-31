@@ -14,8 +14,8 @@ export const FooterBody = styled.div`
    display: grid;
    gap: 20px;
    width: 80%;
-   max-width: 1000px;
-   padding: 20px;
+   max-width: 1200px;
+   padding: 20px 0;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-areas:
@@ -36,7 +36,6 @@ export const FooterItem = styled.div`
    color: ${palette.lightGrey};
    text-align: left;
    justify-content: center;
-   padding: 10px;
    &:nth-child(1) {
       text-align: left;
       grid-area: a;

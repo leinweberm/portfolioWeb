@@ -1,6 +1,6 @@
 import React, { useState, useReducer, useRef } from 'react';
-import { FilterButton, FilterButtons, GalleryContainer } from './galleryStyles';
-import { H1 } from '../../App.stylesVars';
+import { FilterButton, FilterButtons, GalleryContainer, H1 } from './galleryStyles';
+// import { H1 } from '../../App.stylesVars';
 import ProjectsList from './projectsList';
 import { ProjectsDatabase } from './galleryData';
 

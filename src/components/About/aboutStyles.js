@@ -1,77 +1,83 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
 import Avatar from '../../assets/pictures/profilePicture.jpg';
+import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 
 export const PageContainer = styled.div`
    display: flex;
-   margin-top: 70px;
-   padding: 40px 20px;
    flex-direction: column;
    align-items: center;
-   width: 100%;
-   background-color: ${palette.darkTurquoise};
    text-align: center;
+   width: 100%;
+   margin-top: 70px;
+   padding: 40px 20px;
+   background-image: url(${spaceBackground});
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 `;
 export const AboutGrid = styled.div`
-    top: 0;
     display: grid;
+    gap: 20px;
     grid-template-columns: 300px calc(100% - 300px);
     grid-template-rows: 300px calc(100% - 300px);
     grid-template-areas:
         'a b'
         'c b';
-    gap: 20px;
     margin: auto;
     margin-bottom: 30px;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     @media (max-width: 768px) {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
-            'a'
-            'c'
-            'b'; 
+        'a'
+        'c'
+        'b'; 
     }
 `;
 export const AboutItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
     padding: 20px;
     &:nth-child(1) {
         grid-area: a;
         aspect-ratio: 1/1;
-        border: 8px solid ${palette.almostBlack};
-        border-radius: 50px 0 0 0;
-        background-image: url(${Avatar});
-        background-size: cover;
         justify-content: flex-end;
         padding: 0;
+        background-image: url(${Avatar});
+        background-size: cover;
+        border: 8px solid ${palette.almostBlack};
+        border-radius: 20px 0 0 0;
         @media (max-width: 768px) {
             border: 6px solid ${palette.almostBlack};
-            border-radius: 50px 50px 0 0;
+            border-radius: 20px 20px 0 0;
         }
     }
     &:nth-child(2) {
         grid-area: c;
-        background-color: ${palette.almostBlack};
-        color: ${palette.lightGrey};
-        border-radius: 0 0 0px 50px;
         padding: 25px 0;
-        text-align: left;
+        color: ${palette.lightGrey};
+        background-color: ${palette.almostBlackOp};
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
+        border-radius: 0 0 0px 20px;
         @media (max-width: 768px) {
             border-radius: 0 0 0 0;
         }
     }
     &:nth-child(3) {
         grid-area: b;
-        background-color: ${palette.darkGrey};
-        border-radius: 0 50px 50px 0;
-        text-align: left;
         padding: 30px;
+        background-color: ${palette.whiteOp01};
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
+        border-radius: 0 20px 20px 0;
         @media (max-width: 768px) {
-            border-radius: 0 0 50px 50px;
+            border-radius: 0 0 20px 20px;
         }
     }
 `;
@@ -82,24 +88,43 @@ export const TechStack = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    border-top: 1px solid ${palette.whiteOp03};
+    border-bottom: 1px solid ${palette.whiteOp03};
 `;
 export const TechStackItem = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50px;
-    margin: 20px;
     justify-content: center;
     text-align: center;
+    width: 50px;
+    margin: 20px;
 `;
-export const CvButton = styled.button`
-
+export const CvButton = styled.a`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    margin: 20px;
+    text-decoration: none;
+    color: ${palette.lightGrey};
+    background-color: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    &:hover {
+        color: white;
+        background-color: rgba(255,255,255,0.5);
+    }
 `;
-
 export const H1 = styled.h1`
     color: white;
     font-size: 35px;
     margin-bottom: 20px;
     @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: 30px;
     }
 `;

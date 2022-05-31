@@ -29,7 +29,7 @@ export const MenuList = styled.ul`
 `;
 export const MenuItem = styled.li`
    display: inline-block;
-   margin: 0 20px;
+   margin-left: 20px;
 `;
 export const MenuLink = styled(Link)`
    text-decoration: none;
@@ -45,11 +45,11 @@ export const MenuLink = styled(Link)`
    }
 `;
 export const BrandName = styled.div`
-   margin-left: 20px;
    font-size: 14px;
 
    @media (max-width: 500px) {
       justify-self: flex-start;
+      margin-left: 20px;
    }
 `;
 //END OF DESKTOP VERSION

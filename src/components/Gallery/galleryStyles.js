@@ -20,7 +20,7 @@ export const GalleryBody = styled.div`
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   width: 90%;
+   width: 80%;
    max-width: 1200px;
    min-height: 100px;
    justify-content: flex-start;
@@ -33,7 +33,6 @@ export const GalleryItem = styled.div`
    background-color: rgba(255,255,255,0.1);
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(8px);
-   /* border: 1px solid rgba(255,255,255,0.3); */
    border-radius: 20px;
    display: grid;
    width: 200px;
@@ -104,11 +103,8 @@ export const FilterButtons = styled.div`
    width: 80%;
    max-width: 1200px;
    margin-bottom: 20px;
-   background-color: rgba(255,255,255,0.1);
-   -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(8px);
-   border: 1px solid rgba(255,255,255,0.3);
-   border-radius: 20px;
+   
+   border-radius: 0 0 20px 20px;
 `;
 export const FilterButton = styled.button`
    display:flex;
@@ -126,22 +122,24 @@ export const FilterButton = styled.button`
    ${props => {
     if (props.toggle === true) {
       return `
-      background: rgba(0,0,0,0.5);
+      background: rgba(255,255,255,0.3);
       `;
     } else {
       return `
-      background: transparent;
+      background-color: rgba(255,255,255,0.1);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(8px);
       `;
     }
   }}
    &:hover {
-      background-color: rgba(255,255,255,0.5);
+      background-color: ${palette.almostBlackOp03};
    }
    &:nth-child(1) {
-      border-radius: 20px 0 0 20px;
+      border-radius: 0 0 0 20px;
    }
    &:nth-child(3) {
-      border-radius: 0 20px 20px 0;
+      border-radius: 0 0 20px 0;
    }
 `;
 export const FilterButtonActive = styled.button`
@@ -198,5 +196,20 @@ export const LinkButton = styled.button`
    }
    &:nth-child(2){
       margin-left: 10px;
+   }
+`;
+export const H1 = styled.h1`
+   color: white;
+   font-size: 35px;
+   margin-bottom: 15px;
+   width: 80%;
+   max-width: 1200px;
+   text-align: center;
+   background-color: ${palette.whiteOp03};
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(8px);
+   border-radius: 20px 20px 0 0;
+   @media (max-width: 768px) {
+      font-size: 30px;
    }
 `;
