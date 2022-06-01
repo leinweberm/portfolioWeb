@@ -3,14 +3,15 @@ import * as palette from '../../App.stylesVars';
 import Avatar from '../../assets/pictures/profilePicture.jpg';
 import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 
-export const PageContainer = styled.div`
+export const AboutContainer = styled.div`
    display: flex;
    flex-direction: column;
-   align-items: center;
-   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 50px;
+   min-height: 100vh;
    width: 100%;
-   margin-top: 70px;
-   padding: 40px 20px;
+   justify-content: start;
+   align-items: center;
    background-image: url(${spaceBackground});
    background-size: cover;
    background-repeat: no-repeat;
@@ -19,13 +20,11 @@ export const PageContainer = styled.div`
 export const AboutGrid = styled.div`
     display: grid;
     gap: 20px;
-    grid-template-columns: 300px calc(100% - 300px);
+    grid-template-columns: 300px calc(auto - 300px);
     grid-template-rows: 300px calc(100% - 300px);
     grid-template-areas:
         'a b'
         'c b';
-    margin: auto;
-    margin-bottom: 30px;
     width: 80%;
     max-width: 1200px;
     @media (max-width: 768px) {
@@ -51,10 +50,8 @@ export const AboutItem = styled.div`
         background-image: url(${Avatar});
         background-size: cover;
         border: 8px solid ${palette.almostBlack};
-        border-radius: 20px 0 0 0;
         @media (max-width: 768px) {
             border: 6px solid ${palette.almostBlack};
-            border-radius: 20px 20px 0 0;
         }
     }
     &:nth-child(2) {
@@ -75,7 +72,7 @@ export const AboutItem = styled.div`
         background-color: ${palette.whiteOp01};
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(8px);
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 0 20px 0;
         @media (max-width: 768px) {
             border-radius: 0 0 20px 20px;
         }
@@ -121,10 +118,17 @@ export const CvButton = styled.a`
     }
 `;
 export const H1 = styled.h1`
-    color: white;
-    font-size: 35px;
-    margin-bottom: 20px;
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
+   color: white;
+   font-size: 35px;
+   margin-bottom: 15px;
+   width: 80%;
+   max-width: 1200px;
+   text-align: center;
+   background-color: ${palette.whiteOp03};
+   -webkit-backdrop-filter: blur(10px);
+   backdrop-filter: blur(8px);
+   border-radius: 20px 20px 0 0;
+   @media (max-width: 768px) {
+      font-size: 30px;
+   }
 `;

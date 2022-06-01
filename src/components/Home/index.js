@@ -1,10 +1,10 @@
-import { PageContainer } from './homeStyles';
+import { H1, PageContainer } from './homeStyles';
 
 export default function Home() {
   return (
     <>
       <PageContainer>
-        <h1>Martin Leinweber</h1>
+        <H1>Martin Leinweber</H1>
         <h2>Front-end Dev</h2>
       </PageContainer>
     </>
