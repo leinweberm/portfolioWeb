@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
 import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
-import WhatsAppLogoPng from '../../assets/pictures/contact/whatsAppLogoPng.png';
-import EmailLogoPng from '../../assets/pictures/contact/emailLogo.svg';
-import MessengerLogoPng from '../../assets/pictures/contact/messengerLogo.svg';
 
 export const H1 = styled.h1`
    color: white;
@@ -108,24 +105,6 @@ export const LogoContainer = styled.div`
     height: 50px;
     width: 50px;
     margin-bottom: 15px;
-    &:nth-child(1){
-        background-image: url(${EmailLogoPng});
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    &:nth-child(2){
-        background-image: url(${MessengerLogoPng});
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    &:nth-child(3){
-        background-image: url(${WhatsAppLogoPng});
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 `;
 export const FormContainer = styled.form`
     display: grid;

@@ -33,6 +33,14 @@ export default function ContactForm() {
             });
       }
 
+      const ValidateEmail = (email) => {
+        let emailCheck = /\S+@\S+\.\S+/;
+        return emailCheck.test(email);
+      };
+      const ValidateForm = () => {
+        
+      }
+
     return (
         <FormContainer>
             <H2 style={{gridArea: 'title'}}>FORMULÁŘ</H2>
