@@ -14,32 +14,47 @@ export default function ContactForm() {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
 
-      const onSubmit = (e) => {
-        e.preventDefault();
-        send(
-            //service ID
-            'service_tw1qnxw',
-            //template ID
-            'template_u8bv70o',
-            toSend,
-            //user ID
-            'QQNt5L2bF3-h_QisH'
-          )
-            .then((response) => {
-              console.log('SUCCESS!', response.status, response.text);
-            })
-            .catch((err) => {
-              console.log('FAILED...', err);
-            });
-      }
-
       const ValidateEmail = (email) => {
         let emailCheck = /\S+@\S+\.\S+/;
         return emailCheck.test(email);
       };
-      const ValidateForm = () => {
-        
-      }
+
+      const onSubmit = (e) => {
+        e.preventDefault();
+        const isEmail = ValidateEmail(toSend.emailFrom);
+        if(isEmail){
+            const isNotEmpty = () => {
+                if( 
+                    toSend.from_name !== ''
+                    || toSend.message !== '' 
+                ){
+                    console.log('SUCESS! sending email');
+                    send(
+                        //service ID
+                        'service_tw1qnxw',
+                        //template ID
+                        'template_u8bv70o',
+                        toSend,
+                        //user ID
+                        'QQNt5L2bF3-h_QisH'
+                      )
+                        .then((response) => {
+                          console.log('SUCCESS!', response.status, response.text);
+                        })
+                        .catch((err) => {
+                          console.log('FAILED...', err);
+                    });
+                } else {
+                    console.log('Empty name or messege');
+                }
+            };
+            isNotEmpty();
+        } else {
+            console.log('Wrong email format');
+        }
+      };
+
+
 
     return (
         <FormContainer>
