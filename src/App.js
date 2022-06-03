@@ -6,18 +6,18 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 
 function App() {
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </>
-  )
+   return (
+      <>
+         <Routes>
+            <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="contact" element={<Contact />} />
+            </Route>
+         </Routes>
+      </>
+   )
 }
 
 export default App

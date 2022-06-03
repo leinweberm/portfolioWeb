@@ -76,7 +76,6 @@ export const MobNavi = styled.nav`
    z-index: 10;
    justify-content: space-between;
    align-items: center;
-   //background-color: ${palette.almostBlack};
    display: none;
    ${props => {
     if (props.backgroundStyle === true) {
@@ -115,7 +114,7 @@ export const MobMenuList = styled.ul`
    height: 100vh;
    width: 100%;
    background-color: ${palette.almostBlack};
-   z-index: -1;
+   z-index: 9;
 `;
 export const MobMenuItem = styled.li`
    display: inline-block;

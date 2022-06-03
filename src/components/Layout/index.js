@@ -5,13 +5,13 @@ import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 export default function Layout() {
-  return (
-    <div className='App'>
+   return (
+      <div className='App'>
       <Navbar />
       <div className='page'>
-        <Outlet />
-        <Footer />
+         <Outlet />
+         <Footer />
       </div>
-    </div>
-  )
+      </div>
+   )
 }

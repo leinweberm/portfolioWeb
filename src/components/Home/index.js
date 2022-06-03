@@ -1,12 +1,22 @@
-import { H1, PageContainer } from './homeStyles';
+import { useState } from 'react';
+import { CvButtonHome, H1home, H2home, PageContainer } from './homeStyles';
+import myCvPdf from '../../assets/files/leinweberCV.pdf'
 
 export default function Home() {
-  return (
-    <>
+   const [cvDownloaded, setCvDownloaded] = useState(false);
+
+
+   return (
+      <>
       <PageContainer>
-        <H1>Martin Leinweber</H1>
-        <h2>Front-end Dev</h2>
+         <H1home>Martin Leinweber</H1home>
+         <H2home>Designer / Web&nbsp;Dev / Cat&nbsp;Dad</H2home>
+         <CvButtonHome href={myCvPdf} onClick={() => {
+            setCvDownloaded(true);
+         }} download='leinweberCV.pdf'>
+            {cvDownloaded ? 'CV staženo!' : 'Stáhni CV'}
+         </CvButtonHome>
       </PageContainer>
-    </>
-  );
+      </>
+   );
 };

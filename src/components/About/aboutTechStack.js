@@ -27,7 +27,7 @@ export default function AboutTechStack() {
             </p>
             <CvButton href={myCvPdf} onClick={(event) => {
                cvButtonText.current = 'CV staženo!';
-               setCvDownloaded(!cvDownloaded);
+               setCvDownloaded(true);
             }} download='leinweberCV.pdf'>
                {cvButtonText.current}
             </CvButton>
@@ -45,10 +45,10 @@ export default function AboutTechStack() {
                ))}
             </TechStack>
             <h3 style={{fontSize:'18px', fontWeight:'600', marginTop:'20px', alignSelf:'center', justifySelf:'center', textAlign: 'center'}}>
-                  {ShortInfo}
+               {ShortInfo}
             </h3>
             <p style={{fontSize:'15px', fontWeight:'300', marginTop:'20px'}}>
-                  {LongInfo}
+               {LongInfo}
             </p>
          </AboutItem>
       </>

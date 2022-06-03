@@ -17,16 +17,10 @@ export const whiteOp = 'rgba(255,255,255,0.5)';
 
 
 export const H1 = styled.h1`
-    color: white;
-    font-size: 35px;
-    margin-bottom: 10px;
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
+   color: white;
+   font-size: 35px;
+   margin-bottom: 10px;
+   @media (max-width: 768px) {
+      font-size: 30px;
+   }
 `;
-
-//  export const glassColor = 'linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.2) 100%)';
-//Glassmorphism:
-//  background: ${palette.glassColor2};
-//	-webkit-backdrop-filter: blur(10px);
-//	backdrop-filter: blur(8px);

@@ -7,6 +7,7 @@ import mujWeb from '../../assets/pictures/projects/mujWeb.jpg';
 import nestJsProject from '../../assets/pictures/projects/nestJsProject.jpg';
 import reactJsProject from '../../assets/pictures/projects/reactJsProject.jpg';
 import ceskoslovensko2018 from '../../assets/pictures/projects/ceskoslovensko2018.jpg';
+import toDoList from '../../assets/pictures/projects/toDoList.jpg';
 
 export const ProjectsDatabase = [
    {
@@ -16,7 +17,7 @@ export const ProjectsDatabase = [
       type: 'coding + design',
       image: autoskolaSmer,
       gitHub: 'https://github.com/leinweberm/web-Auto-kola-Sm-r',
-      demo: 'https://www.autoskolasmer.cz/'
+      demo: 'https://leinweberm.github.io/web-Autoskola-Smer/'
    },
    {
       id: 2,
@@ -43,7 +44,7 @@ export const ProjectsDatabase = [
       type: 'coding + design',
       image: prvniWeb,
       gitHub: 'https://github.com/leinweberm/firstWebsite',
-      demo: 'http://leinweber.codes/'
+      demo: 'https://leinweberm.github.io/firstWebsite/'
    },
    {
       id: 5,
@@ -69,7 +70,7 @@ export const ProjectsDatabase = [
       description: 'prihlaseni, registrace uživatelského účtu',
       type: 'coding',
       image: nestJsProject,
-      gitHub: '',
+      gitHub: 'https://github.com/leinweberm/Nest.js-LogIn-SingUp',
       demo: ''
    },
    {
@@ -77,9 +78,9 @@ export const ProjectsDatabase = [
       title: 'To do list',
       description: 'my first simple react application',
       type: 'coding',
-      image: reactJsProject,
-      gitHub: '',
-      demo: ''
+      image: toDoList,
+      gitHub: 'https://github.com/leinweberm/ToDo-List',
+      demo: 'https://leinweberm.github.io/ToDo-List/'
    },
    {
       id: 9,
@@ -91,4 +92,3 @@ export const ProjectsDatabase = [
       demo: 'https://www.artstation.com/artwork/Z5gk9x'
    },
 ];
-// export default ProjectsDatabase;
