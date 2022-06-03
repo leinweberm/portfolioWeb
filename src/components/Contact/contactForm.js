@@ -16,6 +16,7 @@ export default function ContactForm() {
     const statusMessage = useRef('');
     const statusButton = useRef('OK');
 
+
       const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
       };
@@ -30,7 +31,6 @@ export default function ContactForm() {
         if(isEmail){
            const isNotEmpty = () => {
               if(toSend.from_name && toSend.message){
-                 console.log('SUCESS! sending email');
                  send(
                     'service_tw1qnxw',
                     'template_u8bv70o',
@@ -44,7 +44,6 @@ export default function ContactForm() {
                     console.log('FAILED...', err);
                  });
               } else {
-                 console.log('FAIL! Empty name or messege');
                  if(toSend.from_name === ''){
                     statusName.current = 'prosím vyplňte jméno';
                  }
@@ -57,7 +56,6 @@ export default function ContactForm() {
            }
            isNotEmpty();
         } else {
-           console.log('Wrong email format!');
            statusEmail.current = 'neplatný formát emailu';
            statusTitle.current = 'Odeslání selhalo!';
            statusButton.current = 'OPRAVIT';

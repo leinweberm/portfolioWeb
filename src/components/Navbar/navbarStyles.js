@@ -13,8 +13,21 @@ export const Navi = styled.nav`
    z-index: 10;
    justify-content: space-evenly;
    align-items: center;
-   background-color: ${palette.almostBlack};
-
+   ${props => {
+    if (props.backgroundStyle === true) {
+      return `
+      transition: 0.6s ease-in-out;
+      background: ${palette.almostBlackOp03};
+      border-bottom: 1px solid ${palette.whiteOp03};
+      `;
+    } else {
+      return `
+      transition: 0.6s ease-in-out;
+      background-color: ${palette.almostBlack};
+      border: none;
+      `;
+    }
+   }}
    @media (max-width: 500px) {
       display: none;
    }
@@ -63,9 +76,23 @@ export const MobNavi = styled.nav`
    z-index: 10;
    justify-content: space-between;
    align-items: center;
-   background-color: ${palette.almostBlack};
+   //background-color: ${palette.almostBlack};
    display: none;
-
+   ${props => {
+    if (props.backgroundStyle === true) {
+      return `
+      transition: 0.6s ease-in-out;
+      background: ${palette.almostBlackOp03};
+      border-bottom: 1px solid ${palette.whiteOp03};
+      `;
+    } else {
+      return `
+      transition: 0.6s ease-in-out;
+      background-color: ${palette.almostBlack};
+      border: none;
+      `;
+    }
+   }}
    @media (max-width: 500px) {
       display: flex;
       font-size: 18px;
@@ -85,7 +112,7 @@ export const MobMenuList = styled.ul`
    justify-content: space-evenly;
    align-items: center;
    top: 70px;
-   height: 400px;
+   height: 100vh;
    width: 100%;
    background-color: ${palette.almostBlack};
    z-index: -1;

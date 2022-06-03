@@ -183,10 +183,10 @@ export const SendButton = styled.div`
     margin-bottom: 30px;
     background-color: ${palette.whiteOp01};
     border-radius: 20px;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
     &:hover {
-        transition: 1s ease-in-out;
+        transition: 0.5s ease-in-out;
         border-radius: 0;
         background-color: ${palette.whiteOp03};
         border: 1px solid white;
@@ -200,7 +200,7 @@ export const AlertWindow = styled.div`
     align-items: center;
     width: 200px;
     padding: 20px;
-    background-color: ${palette.whiteOp};
+    background-color: rgb(169, 169, 169);
     border: 1px solid ${palette.whiteFull};
     border-radius: 20px;
     ${props => {

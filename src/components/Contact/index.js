@@ -18,14 +18,14 @@ export default function Contact() {
                 <b style={{marginBottom: "10px"}}>EMAIL</b>
                 <p>leinweber.martin@gmail.com</p>
             </ContactButton>
-            <ContactButton onClick={(e) => {console.log('click event Email')}}>
+            <ContactButton onClick={(e) => {window.open("https://www.facebook.com/martin.leinweber")}}>
             <LogoContainer>
                 <img src={MessengerLogo} alt="logo messenger" />
             </LogoContainer>
                 <b style={{marginBottom: "10px"}}>MESSENGER</b>
                 <p>Martin Leinweber</p>
             </ContactButton>
-            <ContactButton onClick={(e) => {window.open("https://wa.me/<+420-420608874763>", "_blank")}}>
+            <ContactButton onClick={(e) => {window.open("https://web.whatsapp.com/send?phone=+420-420608874763&text=dobry-den-&app_absent=0", "_blank")}}>
                 <LogoContainer>
                     <img src={WhatsAppLogo} alt="logo messenger" />
                 </LogoContainer>
