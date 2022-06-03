@@ -107,6 +107,7 @@ export const LogoContainer = styled.div`
     margin-bottom: 15px;
 `;
 export const FormContainer = styled.form`
+    position: relative;
     display: grid;
     width: 80%; 
     max-width: 1200px;
@@ -183,10 +184,30 @@ export const SendButton = styled.div`
     background-color: ${palette.whiteOp01};
     border-radius: 20px;
     transition: 1s ease-in-out;
+    cursor: pointer;
     &:hover {
         transition: 1s ease-in-out;
         border-radius: 0;
         background-color: ${palette.whiteOp03};
         border: 1px solid white;
     }
+`;
+export const AlertWindow = styled.div`
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    background-color: ${palette.whiteOp};
+    border: 1px solid ${palette.whiteFull};
+    border-radius: 20px;
+    ${props => {
+        if (props.status === true) {
+            return `display: flex;`;
+        } else {
+            return `display: none;`;
+        }
+    }}
 `;
