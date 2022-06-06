@@ -1,5 +1,6 @@
 import React, { useState, useReducer, useRef } from 'react';
-import { FilterButton, FilterButtons, GalleryContainer, H1 } from './galleryStyles';
+import { FilterButton, FilterButtons, } from './galleryStyles';
+import { PageContainer, H1 } from '../../App.stylesVars';
 import ProjectsList from './projectsList';
 import { ProjectsDatabase } from './galleryData';
 
@@ -23,7 +24,7 @@ export default function Gallery() {
    const designToggle = useRef(false);
 
    return (
-      <GalleryContainer>
+      <PageContainer>
       <H1>PROJEKTY</H1>
       <FilterButtons>
          <FilterButton toggle={codeToggle.current} onClick={function(event){
@@ -73,6 +74,6 @@ export default function Gallery() {
             }
          )}
       filter={filter.filter}/>
-      </GalleryContainer>
+      </PageContainer>
    );
 };

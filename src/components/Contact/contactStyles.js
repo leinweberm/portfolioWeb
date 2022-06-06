@@ -24,20 +24,6 @@ export const H2 = styled(H1)`
    padding: 5px;
    border-bottom: 1px solid ${palette.whiteOp03};
 `;
-export const ContactContainer = styled.div`
-display: flex;
-flex-direction: column;
-padding-top: 100px;
-padding-bottom: 50px;
-min-height: 100vh;
-width: 100%;
-justify-content: start;
-align-items: center;
-background-image: url(${spaceBackground});
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-`;
 export const ButtonsContainer = styled.div`
    display: grid;
    flex-wrap: wrap;

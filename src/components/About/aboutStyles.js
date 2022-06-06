@@ -1,22 +1,7 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
 import Avatar from '../../assets/pictures/profilePicture.jpg';
-import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 
-export const AboutContainer = styled.div`
-   display: flex;
-   flex-direction: column;
-   padding-top: 100px;
-   padding-bottom: 50px;
-   min-height: 100vh;
-   width: 100%;
-   justify-content: start;
-   align-items: center;
-   background-image: url(${spaceBackground});
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-`;
 export const AboutGrid = styled.div`
    display: grid;
    gap: 20px;
@@ -106,29 +91,14 @@ export const CvButton = styled.a`
    font-size: 15px;
    margin: 20px;
    text-decoration: none;
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    background-color: rgba(255,255,255,0.1);
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(8px);
-   border: 1px solid rgba(255,255,255,0.3);
+   border: 1px solid rgba(255,255,255,0.5);
    cursor: pointer;
    &:hover {
       color: white;
       background-color: rgba(255,255,255,0.5);
-   }
-`;
-export const H1 = styled.h1`
-   color: white;
-   font-size: 35px;
-   margin-bottom: 15px;
-   width: 80%;
-   max-width: 1200px;
-   text-align: center;
-   background-color: ${palette.whiteOp03};
-   -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(8px);
-   border-radius: 20px 20px 0 0;
-   @media (max-width: 768px) {
-      font-size: 30px;
    }
 `;

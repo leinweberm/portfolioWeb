@@ -1,5 +1,6 @@
 import React from 'react';
-import { ButtonsContainer, ContactButton, ContactContainer, H1, LogoContainer } from './contactStyles';
+import { ButtonsContainer, ContactButton, LogoContainer } from './contactStyles';
+import { PageContainer, H1 } from '../../App.stylesVars';
 import ContactForm from './contactForm';
 import EmailLogo from '../../assets/pictures/contact/emailLogo.svg';
 import MessengerLogo from '../../assets/pictures/contact/messengerLogo.svg';
@@ -8,7 +9,7 @@ import WhatsAppLogo from '../../assets/pictures/contact/whatsAppLogo.svg';
 export default function Contact() {
 
    return (
-      <ContactContainer>
+      <PageContainer>
          <H1>KONTAKT</H1>
          <ButtonsContainer>
             <ContactButton onClick={(e) => {window.open("mailto:leinweber.martin@gmail.com", "_blank")}}>
@@ -34,6 +35,6 @@ export default function Contact() {
             </ContactButton>
          </ButtonsContainer>
          <ContactForm />
-      </ContactContainer>
+      </PageContainer>
    )
 }

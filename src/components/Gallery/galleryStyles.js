@@ -2,20 +2,6 @@ import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
 import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 
-export const GalleryContainer = styled.div`
-   display: flex;
-   flex-direction: column;
-   padding-top: 100px;
-   padding-bottom: 50px;
-   min-height: 100vh;
-   width: 100%;
-   justify-content: start;
-   align-items: center;
-   background-image: url(${spaceBackground});
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center;
-`;
 export const GalleryBody = styled.div`
    display: flex;
    flex-direction: row;

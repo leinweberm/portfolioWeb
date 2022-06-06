@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
-import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
+//import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 import { CvButton } from "../About/aboutStyles";
+import landingPageBackground from '../../assets/pictures/landingPage/landingPageBackground.jpg';
+import landingPageHero from '../../assets/pictures/landingPage/landingPageHero.png';
 
 export const PageContainer = styled.div`
    position: relative;
@@ -11,9 +13,8 @@ export const PageContainer = styled.div`
    padding-bottom: 50px;
    min-height: 100vh;
    width: 100%;
-   //justify-content: start;
    align-items: center;
-   background-image: url(${spaceBackground});
+   background-image: url(${landingPageBackground});
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -23,7 +24,7 @@ export const H1home = styled.h1`
       font-size: 35px;
       text-align: center;
       max-width: 80%;
-      z-index: 8;
+      z-index: 6;
       @media (max-width: 768px) {
          font-size: 25px;
       }
@@ -50,4 +51,14 @@ export const CvButtonHome = styled(CvButton)`
       transition: 0.7s ease-in-out;
       border-radius: 0;
    }
+`;
+export const Hero = styled.div`
+   position: absolute;
+   z-index: 7;
+   height: 100%;
+   aspect-ratio: 498/1080;
+   background-image: url(${landingPageHero});
+   background-size: cover;
+   background-position: center;
+   top: 0;
 `;

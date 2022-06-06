@@ -18,13 +18,11 @@ export const Navi = styled.nav`
       return `
       transition: 0.6s ease-in-out;
       background: ${palette.almostBlackOp03};
-      border-bottom: 1px solid ${palette.whiteOp03};
       `;
     } else {
       return `
       transition: 0.6s ease-in-out;
       background-color: ${palette.almostBlack};
-      border: none;
       `;
     }
    }}
@@ -46,15 +44,11 @@ export const MenuItem = styled.li`
 `;
 export const MenuLink = styled(Link)`
    text-decoration: none;
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    font-size: 16px;
 
    &:hover {
-      color: white;
-   }
-   &::after {
-      color: white;
-      border-bottom: 1px solid white;
+      color: ${palette.lightTurquoise};
    }
 `;
 export const BrandName = styled.div`
@@ -82,13 +76,11 @@ export const MobNavi = styled.nav`
       return `
       transition: 0.6s ease-in-out;
       background: ${palette.almostBlackOp03};
-      border-bottom: 1px solid ${palette.whiteOp03};
       `;
     } else {
       return `
       transition: 0.6s ease-in-out;
       background-color: ${palette.almostBlack};
-      border: none;
       `;
     }
    }}
@@ -100,7 +92,7 @@ export const MobNavi = styled.nav`
 export const Hamburger = styled(RiMenuFill)`
    height: 50px;
    width: 50px;
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    margin-right: 20px;
    cursor: pointer;
 `;

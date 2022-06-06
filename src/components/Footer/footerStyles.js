@@ -33,7 +33,7 @@ export const FooterBody = styled.div`
 export const FooterItem = styled.div`
    display: flex;
    flex-direction: column;
-   color: ${palette.lightGrey};
+   color: ${palette.almostBlack};
    text-align: left;
    justify-content: center;
    &:nth-child(1) {
@@ -41,7 +41,7 @@ export const FooterItem = styled.div`
       grid-area: a;
       @media (max-width: 500px) {
          text-align: center;
-         border-bottom: 1px solid ${palette.darkGrey};
+         border-bottom: 1px solid ${palette.whiteFull};
       }
    }
    &:nth-child(2) {
@@ -49,7 +49,7 @@ export const FooterItem = styled.div`
       grid-area: b;
       @media (max-width: 500px) {
          text-align: center;
-         border-bottom: 1px solid ${palette.darkGrey};
+         border-bottom: 1px solid ${palette.whiteFull};
       }
    }
    &:nth-child(3) {
@@ -61,19 +61,19 @@ export const FooterItem = styled.div`
    }
 `;
 export const H1 = styled.h1`
-   color: ${palette.darkTurquoise};
+   color: ${palette.whiteFull};
    font-size: 15px;
 `;
 export const B = styled.b`
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    font-size: 13px;
 `;
 export const P = styled.p`
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    font-size: 13px;
 `;
 export const NewTabLink = styled.a`
-   color: ${palette.lightGrey};
+   color: ${palette.whiteFull};
    font-size: 13px;
    text-decoration: underline;
 `;
