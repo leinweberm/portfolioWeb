@@ -21,7 +21,9 @@
     "react-viewport-height": "^1.2.0",
     "sass": "^1.52.1",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.73.0",
+    "webpack-merge": "^5.8.0"
   },
   "scripts": {
     "start": "react-scripts start",

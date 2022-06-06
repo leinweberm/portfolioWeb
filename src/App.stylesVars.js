@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import landingPageBackgroundDark2 from '../src/assets/pictures/landingPage/landingPageBackgroundDark2.jpg';
-import purpleNebula6 from '../src/assets/pictures/landingPage/purpleNebula6.png';
+import purpleNebula6 from '../src/assets/pictures/landingPage/purpleNebula6.jpg';
 
 //COLOR SCHEME
 export const almostBlack = 'rgba(10,10,10,1)';

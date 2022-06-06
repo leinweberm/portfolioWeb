@@ -5,7 +5,6 @@ import prvniWeb from '../../assets/pictures/projects/prvniWeb.jpg';
 import zmrzkaRolka from '../../assets/pictures/projects/zmrzkaRolka.jpg';
 import mujWeb from '../../assets/pictures/projects/mujWeb.jpg';
 import nestJsProject from '../../assets/pictures/projects/nestJsProject.jpg';
-import reactJsProject from '../../assets/pictures/projects/reactJsProject.jpg';
 import ceskoslovensko2018 from '../../assets/pictures/projects/ceskoslovensko2018.jpg';
 import toDoList from '../../assets/pictures/projects/toDoList.jpg';
 

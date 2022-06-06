@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import * as palette from '../../App.stylesVars';
-import spaceBackground from '../../assets/pictures/spacePozadi.jpg';
 
 export const GalleryBody = styled.div`
    display: flex;
