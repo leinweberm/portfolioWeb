@@ -18,6 +18,10 @@ export const PageContainer = styled.div`
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   @media (max-width: 768px) {
+      min-height: 80vh;
+      padding-top: 80px;
+   }
 `;
 export const H1home = styled.h1`
       color: ${palette.whiteFull};

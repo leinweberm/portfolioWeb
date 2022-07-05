@@ -36,6 +36,9 @@ export const FooterItem = styled.div`
    color: ${palette.almostBlack};
    text-align: left;
    justify-content: center;
+   @media (max-width: 500px) {
+      padding-bottom: 20px;
+   }
    &:nth-child(1) {
       text-align: left;
       grid-area: a;

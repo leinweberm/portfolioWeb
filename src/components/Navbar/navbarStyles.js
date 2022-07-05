@@ -14,17 +14,17 @@ export const Navi = styled.nav`
    justify-content: space-evenly;
    align-items: center;
    ${props => {
-    if (props.backgroundStyle === true) {
-      return `
+      if (props.backgroundStyle === true) {
+         return `
       transition: 0.6s ease-in-out;
       background: ${palette.almostBlackOp03};
       `;
-    } else {
-      return `
+      } else {
+         return `
       transition: 0.6s ease-in-out;
       background-color: ${palette.almostBlack};
       `;
-    }
+      }
    }}
    @media (max-width: 500px) {
       display: none;
@@ -72,17 +72,17 @@ export const MobNavi = styled.nav`
    align-items: center;
    display: none;
    ${props => {
-    if (props.backgroundStyle === true) {
-      return `
-      transition: 0.6s ease-in-out;
+      if (props.backgroundStyle === true) {
+         return `
+      transition: 0.3s ease-in-out;
       background: ${palette.almostBlackOp03};
       `;
-    } else {
-      return `
-      transition: 0.6s ease-in-out;
+      } else {
+         return `
+      transition: 0.3s ease-in-out;
       background-color: ${palette.almostBlack};
       `;
-    }
+      }
    }}
    @media (max-width: 500px) {
       display: flex;

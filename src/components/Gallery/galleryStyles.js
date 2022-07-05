@@ -44,8 +44,6 @@ export const ItemType = styled.div`
    justify-content: center;
    align-items: center;
    background-color: rgba(255,255,255,0.1);
-   -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(8px);
    border-radius: 20px 20px 0 0;
 `;
 export const ItemImage = styled.div`
@@ -105,18 +103,18 @@ export const FilterButton = styled.button`
    background: transparent;
    cursor: pointer;
    ${props => {
-    if (props.toggle === true) {
-      return `
+      if (props.toggle === true) {
+         return `
       background: rgba(255,255,255,0.3);
       `;
-    } else {
-      return `
+      } else {
+         return `
       background-color: rgba(255,255,255,0.1);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(8px);
       `;
-    }
-  }}
+      }
+   }}
    &:hover {
       background-color: ${palette.almostBlackOp03};
    }
@@ -172,8 +170,6 @@ export const LinkButton = styled.button`
    font-weight: 400;
    color: white;
    background-color: rgba(255,255,255,0.1);
-   -webkit-backdrop-filter: blur(10px);
-   backdrop-filter: blur(8px);
    border: 1px solid rgba(255,255,255,0.3);
    cursor: pointer;
    &:hover {

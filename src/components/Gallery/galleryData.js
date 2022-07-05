@@ -21,7 +21,7 @@ export const ProjectsDatabase = [
    {
       id: 2,
       title: 'Naučná Stezka',
-      description: 'Hukvaldská stezka na počest L. Jenáčka',
+      description: 'Hukvaldská stezka na počest L. Janáčka',
       type: 'design',
       image: stezkaLeosJanacek,
       gitHub: '',
@@ -66,7 +66,7 @@ export const ProjectsDatabase = [
    {
       id: 7,
       title: 'Log In & Sign Up',
-      description: 'prihlaseni, registrace uživatelského účtu',
+      description: 'přihlášení, registrace uživatelského účtu',
       type: 'coding',
       image: nestJsProject,
       gitHub: 'https://github.com/leinweberm/Nest.js-LogIn-SingUp',
@@ -75,7 +75,7 @@ export const ProjectsDatabase = [
    {
       id: 8,
       title: 'To do list',
-      description: 'my first simple react application',
+      description: 'procvičování HTML, CSS a JavaScriptu',
       type: 'coding',
       image: toDoList,
       gitHub: 'https://github.com/leinweberm/ToDo-List',
