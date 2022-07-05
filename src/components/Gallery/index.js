@@ -13,10 +13,13 @@ function setFilter(filter, action) {
          return { filter: 'coding + design' };
       case 'design':
          return { filter: 'design' };
+      default: 
+         return { filter: 'coding + design' };
    }
 };
 
 export default function Gallery() {
+   // eslint-disable-next-line
    const [projects, setProjects] = useState(ProjectsDatabase);
    const [filter, dispatch] = useReducer(setFilter, initialFilter);
    const codeToggle = useRef(false);
