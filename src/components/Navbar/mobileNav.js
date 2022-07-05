@@ -6,7 +6,7 @@ export default function MobileNav() {
    const [navbarColor, setNavbarColor] = useState(true);
 
    const changeNavbarColor = () => {
-      if (window.scrollY <= 70) {
+      if (window.scrollY <= 70 && isNavActive == false) {
          setNavbarColor(true);
       } else {
          setNavbarColor(false);
