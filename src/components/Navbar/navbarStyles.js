@@ -105,6 +105,7 @@ export const MobMenuList = styled.ul`
    top: 70px;
    height: 100vh;
    width: 100%;
+   padding-bottom: 70px;
    background-color: ${palette.almostBlack};
    z-index: 9;
 `;

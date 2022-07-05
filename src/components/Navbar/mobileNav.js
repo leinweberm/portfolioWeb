@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
 import { MobMenuList, MobMenuItem, MobMenuLink, MobNavi, Hamburger, BrandName } from './navbarStyles';
+
+import React, { useState } from 'react'
 
 export default function MobileNav() {
    const [isNavActive, setIsNavActive] = useState(false);
@@ -24,6 +25,10 @@ export default function MobileNav() {
          setNavbarColor(thisNavbarColor);
       }
    };
+   const hangleNavbarChange = () => {
+      setIsNavActive(!isNavActive);
+      activeNavbarColor(isNavActive);
+   };
 
    return (
       <>
@@ -33,16 +38,21 @@ export default function MobileNav() {
             </BrandName>
             {isNavActive &&
                <MobMenuList>
-                  <MobMenuItem><MobMenuLink to="/" onClick={() => { setIsNavActive(!isNavActive); activeNavbarColor(isNavActive); }}>HOME</MobMenuLink></MobMenuItem>
-                  <MobMenuItem><MobMenuLink to="/about" onClick={() => { setIsNavActive(!isNavActive); activeNavbarColor(isNavActive); }}>ABOUT</MobMenuLink></MobMenuItem>
-                  <MobMenuItem><MobMenuLink to="/gallery" onClick={() => { setIsNavActive(!isNavActive); activeNavbarColor(isNavActive); }}>PROJECTS</MobMenuLink></MobMenuItem>
-                  <MobMenuItem><MobMenuLink to="/contact" onClick={() => { setIsNavActive(!isNavActive); activeNavbarColor(isNavActive); }}>CONTACT</MobMenuLink></MobMenuItem>
+                  <MobMenuItem>
+                     <MobMenuLink to="/" onClick={hangleNavbarChange}>DOMŮ</MobMenuLink>
+                  </MobMenuItem>
+                  <MobMenuItem>
+                     <MobMenuLink to="/about" onClick={hangleNavbarChange}>INFO</MobMenuLink>
+                  </MobMenuItem>
+                  <MobMenuItem>
+                     <MobMenuLink to="/gallery" onClick={hangleNavbarChange}>PROJEKTY</MobMenuLink>
+                  </MobMenuItem>
+                  <MobMenuItem>
+                     <MobMenuLink to="/contact" onClick={hangleNavbarChange}>KONTAKT</MobMenuLink>
+                  </MobMenuItem>
                </MobMenuList >
             }
-            <Hamburger onClick={() => {
-               setIsNavActive(!isNavActive);
-               activeNavbarColor(isNavActive);
-            }} />
+            <Hamburger onClick={hangleNavbarChange} />
          </MobNavi>
       </>
    );
