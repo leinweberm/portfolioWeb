@@ -6,7 +6,9 @@ import myCvPdf from '../../assets/files/leinweberCV.pdf'
 
 
 export default function AboutTechStack() {
+   // eslint-disable-next-line
    const [skills, setSkills] = useState(AboutDatabase);
+   // eslint-disable-next-line
    const [cvDownloaded, setCvDownloaded] = useState(false);
    const cvButtonText = useRef('stáhni CV!');
 
