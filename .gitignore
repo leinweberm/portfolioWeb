@@ -5,6 +5,7 @@
 /zdroje
 /.pnp
 .pnp.js
+/ruzne.txt
 
 # testing
 /coverage
