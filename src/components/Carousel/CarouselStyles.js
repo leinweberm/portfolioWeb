@@ -7,8 +7,11 @@ export const CarouselBody = styled.div`
    display: flex;
    flex-direction: column;
    width: 100%;
-   aspect-ratio: 550/413;
+   object-fit: contain;
    background-color: ${palette.whiteOp03};
+   @media (max-width: 550px) {
+      margin-bottom: 65px;
+   }
 `;
 export const CarouselButton = styled.button`
    position: absolute;
@@ -37,9 +40,17 @@ export const CarouselButton = styled.button`
       right: calc(100% - 70px);
       top: calc(50% - 25px);
       transform: rotate(180deg);
+      @media (max-width: 550px) {
+         right: calc(50% + 15px);
+         top: calc(100% + 13px);
+      }
    };
    :nth-child(3) {
       left: calc(100% - 70px);
       top: calc(50% - 25px);
+      @media (max-width: 550px) {
+         left: calc(50% + 15px);
+         top: calc(100% + 13px);
+      }
    };
 `;

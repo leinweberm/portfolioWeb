@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { PageContainer, H1 } from '../../App.stylesVars';
 import { ProjectsDatabase } from './projectsData';
-import { ProjectCard, ProjectCardItem, P } from './projectStyles';
+import { ProjectCard, ProjectCardItem, P } from './projectDetailStyles';
 import Carousel from '../Carousel';
 
 export default function ProjectDetail() {
@@ -12,7 +12,7 @@ export default function ProjectDetail() {
 
    return (
       <PageContainer>
-         <H1>{project.title}</H1>
+         <H1 style={{padding: '0 15px'}}>{project.title}</H1>
          <ProjectCard>
             <ProjectCardItem>
                <Carousel project={project} />  
