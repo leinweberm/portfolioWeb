@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 
-
 import Layout from './components/Layout';
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Gallery = React.lazy(() => import('./components/Gallery'));
 const Contact = React.lazy(() => import('./components/Contact'));
 const ProjectDetail = React.lazy(() => import('./components/Gallery/projectDetail'));
+
 
 function App() {
    return (
