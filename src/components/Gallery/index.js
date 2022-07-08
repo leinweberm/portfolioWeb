@@ -1,8 +1,8 @@
 import React, { useState, useReducer, useRef } from 'react';
-import { FilterButton, FilterButtons, } from './galleryStyles';
+import { FilterButton, FilterButtons, } from './projectsStyles';
 import { PageContainer, H1 } from '../../App.stylesVars';
 import ProjectsList from './projectsList';
-import { ProjectsDatabase } from './galleryData';
+import { ProjectsDatabase } from './projectsData';
 
 const initialFilter = { filter: 'coding + design' }
 function setFilter(filter, action) {
