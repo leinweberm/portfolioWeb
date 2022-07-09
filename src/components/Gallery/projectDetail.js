@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import { PageContainer, H1 } from '../../App.stylesVars';
 import { ProjectsDatabase } from './projectsData';
-import { ProjectCard, ProjectCardItem, P } from './projectDetailStyles';
+import { ProjectCard, ProjectCardItem, P, ExternalLink } from './projectDetailStyles';
 import Carousel from '../Carousel';
 
 export default function ProjectDetail() {
@@ -19,6 +19,27 @@ export default function ProjectDetail() {
             </ProjectCardItem>
             <ProjectCardItem>
                <P>{project.text}</P>
+               <div style={{
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  width: '100%', 
+                  alignItems: 'center'}}
+               >
+                  { project.gitHub && 
+                     <ExternalLink onClick={() => {
+                        window.open(project.gitHub, "_blank")}}
+                     >
+                        GitHub
+                     </ExternalLink> 
+                  }
+                  { project.demo && 
+                     <ExternalLink onClick={() => {
+                        window.open(project.demo, "_blank")}}
+                     >
+                        Live Demo
+                     </ExternalLink> 
+                  }
+               </div>
             </ProjectCardItem>
          </ProjectCard>
       </PageContainer>

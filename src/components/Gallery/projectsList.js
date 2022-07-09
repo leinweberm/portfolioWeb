@@ -12,7 +12,6 @@ export default function PokusList({ projects }) {
                   </img>
                </ItemImage>
                <LinkGrid>
-                  {/* { project.gitHub && <GitButton onClick={() => {window.open(project.gitHub, "_blank")}}>GitHub</GitButton>} */}
                   <LinkButton to={`/gallery/project/${project.id}`}>Zobrazit detail</LinkButton>
                </LinkGrid>
                <ItemTitle>{ project.title }</ItemTitle>
