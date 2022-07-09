@@ -94,7 +94,7 @@ export const ProjectsDatabase = [
          StezkaJanacek11
       ],
       gitHub: '',
-      demo: 'https://www.behance.net/gallery/36428143/NAUCNA-STEZKA-LEOS-JANACEK-OCIMA-DETI'
+      demo: ''
    },
    {
       id: 3,
@@ -110,7 +110,7 @@ export const ProjectsDatabase = [
          Kulturpunkt05
       ],
       gitHub: '',
-      demo: 'https://www.behance.net/gallery/36427411/OSTRAU-DER-KULTURPUNKT-2016',
+      demo: '',
       text: '',
    },
    {
@@ -143,7 +143,7 @@ export const ProjectsDatabase = [
          ZmrzkaRolka10
       ],
       gitHub: '',
-      demo: 'https://www.zmrzkaarolka.cz/'
+      demo: ''
    },
    {
       id: 6,
@@ -186,6 +186,6 @@ export const ProjectsDatabase = [
          Ceskoslovensko201802
       ],
       gitHub: '',
-      demo: 'https://www.artstation.com/artwork/Z5gk9x'
+      demo: ''
    },
 ];

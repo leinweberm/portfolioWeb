@@ -3,7 +3,7 @@ import * as palette from '../../App.stylesVars';
 import { Link } from "react-router-dom";
 
 export const GalleryItem = styled.div`
-   background-color: rgba(255,255,255,0.1);
+   background-color: ${palette.whiteOp01};
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(8px);
    border-radius: 20px;
