@@ -6,13 +6,49 @@ export const CarouselBody = styled.div`
    position: relative;
    display: flex;
    flex-direction: column;
-   aspect-ratio: 19 / 9;
    object-fit: contain;
+   height: 100%;
    width: 100%;
-   background-color: ${palette.whiteOp03};
+   ${props => {
+      if(props.backgroundImage) {
+         return `
+            background-image: url(${props.backgroundImage});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+         `;
+      }
+   }}
    @media (max-width: 550px) {
       margin-bottom: 65px;
+      justify-content: flex-start;
    }
+   ::before {
+      content: '';
+      position: absolute;
+      background-color: green;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      z-index: 1;
+      background-color: ${palette.almostBlack};
+      opacity: 0.8;
+   }
+`;
+export const ImageContainer = styled.div`
+   display: flexbox;
+   flex-direction: row;
+   justify-content: center;
+   height: 100%;
+   z-index: 2;
+`;
+export const Image = styled.img`
+   display: flex;
+   max-width: 100%;
+   max-height: 100%;
+   aspect-ratio: 16 / 9;
+   object-fit: contain;
 `;
 export const CarouselButton = styled.button`
    position: absolute;
