@@ -6,8 +6,9 @@ export const CarouselBody = styled.div`
    position: relative;
    display: flex;
    flex-direction: column;
-   width: 100%;
+   aspect-ratio: 19 / 9;
    object-fit: contain;
+   width: 100%;
    background-color: ${palette.whiteOp03};
    @media (max-width: 550px) {
       margin-bottom: 65px;

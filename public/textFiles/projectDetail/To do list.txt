@@ -1,0 +1,1 @@
+TO DO LIST dělaný jako zkušební zadání v rámci pracovního pohovoru. V zadání byla jasně definovaná HTML kostra, kterou jsem nesměl měnit a nutnost použít vanila JavaScript.

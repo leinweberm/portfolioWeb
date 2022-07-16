@@ -1,0 +1,2 @@
+Back-end aplikace, která zpracovává vytváření nových uživatelských účtů, přihlášení do stávajícího uživatelského účtu a v tuto chvíli dokončuji generování access tokenů s nastavenou dobou expirace, které budou složit k automatickému odhlášení uživatele po expiraci tokenu.
+Použité technologie: Nest.js, Docker, PostGreSQL, Prisma Studio, Prisma Client, Class-validator, Class-transforme, BCrypt
