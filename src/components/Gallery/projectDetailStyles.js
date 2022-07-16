@@ -14,7 +14,6 @@ export const ProjectCardItem = styled.div`
    align-items: flex-start;
    padding: 20px;
    min-width: 350px;
-   background-color: ${palette.whiteOp01};
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(8px);
    @media (max-width: 1000px) {
@@ -23,13 +22,20 @@ export const ProjectCardItem = styled.div`
    :nth-child(1){
       border-radius: 0;
       margin-bottom: 20px;
-      aspect-ratio: 16 / 9;
+      background-color: ${palette.whiteOp01};
+      @media (min-width: 550px) {
+         height: 50vh;
+      }
+      @media (min-width: 768px) {
+         height: 60vh;
+      }
    };
    :nth-child(2){
       flex-direction: column;
       align-items: center;
       border-radius: 0 0 20px 20px;
       white-space: pre-wrap;
+      background-color: ${palette.almostBlackOp};
    };
 `;
 export const P = styled.p`
@@ -37,6 +43,7 @@ export const P = styled.p`
    font-size: 15px;
    margin-bottom: 10px;
    white-space: pre-wrap;
+   line-height: 20px;
 `;
 export const ExternalLink = styled.button`
    display: flex;

@@ -11,7 +11,7 @@ const axios = require('axios').default;
 export default function ProjectDetail() {
    const { id } = useParams();
    const project = ProjectsDatabase[id-1];
-   const [finalText, setFinalText] = useState('place holder');
+   const [finalText, setFinalText] = useState('');
    let finalString = '';
    
    const fetchText = async() => {
@@ -41,7 +41,7 @@ export default function ProjectDetail() {
             <ProjectCardItem>
                <Carousel project={ project } />  
             </ProjectCardItem>
-            <ProjectCardItem>
+            <ProjectCardItem> 
                <P>{ finalText }</P>
                <LinkContainer>
                   { project.gitHub && 

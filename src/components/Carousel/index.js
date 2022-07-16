@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { CarouselBody, CarouselButton } from './CarouselStyles';
+import { CarouselBody, CarouselButton, Image, ImageContainer } from './CarouselStyles';
 
 export default function Carousel({project}) {
    const galleryLength = project.image.length;
@@ -30,8 +30,10 @@ export default function Carousel({project}) {
    }
 
    return (
-      <CarouselBody>
-         <img src={projectImage} alt={project.description} />
+      <CarouselBody backgroundImage={projectImage}>
+         <ImageContainer>
+            <Image src={projectImage} alt={project.description} />
+         </ImageContainer>
          <CarouselButton galleryLength={galleryLength} onClick={() => {handleClick("prev")}}/>
          <CarouselButton galleryLength={galleryLength} onClick={() => {handleClick("next")}}/>
       </CarouselBody>
