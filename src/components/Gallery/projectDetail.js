@@ -15,7 +15,7 @@ export default function ProjectDetail() {
    let finalString = '';
    
    const fetchText = async() => {
-      await axios.get(`http://localhost:3000/textFiles/projectDetail/${project.title}.txt`)
+      await axios.get(`http://leinweber.codes/textFiles/projectDetail/${project.title}.txt`)
       .then((response) => {
             let tempText = response.data.split(/\r?\n/);
             for (let i = 0; i < tempText.length; i++) {
