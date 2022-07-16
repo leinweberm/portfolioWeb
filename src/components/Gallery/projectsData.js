@@ -68,11 +68,6 @@ export const ProjectsDatabase = [
       ],
       gitHub: 'https://github.com/leinweberm/web-Auto-kola-Sm-r',
       demo: 'https://leinweberm.github.io/web-Autoskola-Smer/',
-      text:[
-         'Pro klienta Autoškola\u00a0Směr jsem vytvářel webové stránky. Jednalo se o\u00a0první mnou tvou tvořené komerční webové stránky. Stránky byly vytvořeny za\u00a0použítí HTML, CSS a\u00a0JavaScriptu.',
-         'Pro\u00a0klienta jsem rovněž vytvářel reklamní létáky velikosti A4 a\u00a0A3 v\u00a0barevné i\u00a0černobílé variantě. Dále jsem vytvářel dárkové poukazy a\u00a0QR vizitku.',
-         ''
-      ],
    },
    {
       id: 2,
@@ -111,7 +106,6 @@ export const ProjectsDatabase = [
       ],
       gitHub: '',
       demo: '',
-      text: '',
    },
    {
       id: 4,

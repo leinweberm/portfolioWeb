@@ -37,7 +37,7 @@ export const ItemImage = styled.div`
    display: flex;
    width: 80%;
    aspect-ratio: 200/150;
-   background-color: white;
+   background-color: transparent;
    background-size: cover;
    background-position: center;
    justify-self: center;

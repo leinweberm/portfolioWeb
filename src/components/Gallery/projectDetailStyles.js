@@ -3,12 +3,9 @@ import * as palette from "../../App.stylesVars";
 
 export const ProjectCard = styled.div`
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    width: 80%;
    max-width: 1200px;
-   @media (max-width: 1000px) {
-      flex-direction: column;
-   }
 `;
 export const ProjectCardItem = styled.div`
    display: flex;
@@ -24,29 +21,22 @@ export const ProjectCardItem = styled.div`
       min-width: 200px;
    }
    :nth-child(1){
-      margin-right: 10px;
-      border-radius: 0 0 0 20px;
-      @media (max-width: 1000px) {
-         margin-bottom: 20px;
-         border-radius: 0;
-      }
+      border-radius: 0;
+      margin-bottom: 20px;
+      aspect-ratio: 16 / 9;
    };
    :nth-child(2){
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
-      margin-left: 10px;
-      border-radius: 0 0 20px 0;
-      @media (max-width: 1000px) {
-         margin: 0;
-         border-radius: 0 0 20px 20px;
-      }
+      border-radius: 0 0 20px 20px;
+      white-space: pre-wrap;
    };
 `;
 export const P = styled.p`
    color: white;
    font-size: 15px;
    margin-bottom: 10px;
+   white-space: pre-wrap;
 `;
 export const ExternalLink = styled.button`
    display: flex;
@@ -65,4 +55,12 @@ export const ExternalLink = styled.button`
          background-color: ${palette.whiteOp03};
       }
    }
+`;
+export const LinkContainer = styled.div`
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+   justify-self: flex-end;
+   align-self: center;
 `;

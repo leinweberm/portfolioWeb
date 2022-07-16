@@ -1,0 +1,4 @@
+Pro nově vzniklou Autoškolu Směr, která otevřela dvě pobočky jsem dělal webové stránky, dárkové poukazy, reklamní letáky, profily na sociálních sitích, nastavoval webhosting a Google Ads.
+Webové stránky byly single page webovka vytvořená pomocí vanilla HTML/CSS/JavaScriptu. Jednalo se o mé první komerční webové stránky. 
+Následovala tvorba propagačních tiskovin. Autoškola měla možnost vyvěsit letáky na místních středních školách, takže jsme pro tuto příležitost dělali letáky o velikostech A4 a A3. Dále mi klient dal požadavek na tvorbu dárkových poukazů, kterých se dělali tři varianty designu (narozeniny, Vánoce a univerzální). U tiskovin jsem měl na starost kompletní proces od návrhu, přes přípravu tiskovin až po výběr tiskárny a doručení hotového produktu klientovi.
+Jako poslední bod spolupráce jsem rovněž klientovi nastavil webhosting, účty na sociálních sítích a Google Ads / Google Search Console.

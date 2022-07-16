@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
 
 import Layout from './components/Layout';
+import Fallback from './components/Fallback';
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const Gallery = React.lazy(() => import('./components/Gallery'));
@@ -11,14 +12,14 @@ const ProjectDetail = React.lazy(() => import('./components/Gallery/projectDetai
 
 function App() {
    return (
-      <Suspense fallback={<div><h1>...Loading</h1></div>}>
+      <Suspense fallback={ <Fallback /> }>
          <Routes>
-            <Route path="/" element={<Layout />}>
-               <Route index element={<Home />} />
-               <Route path="/about" element={<About />} />
-               <Route path="/gallery" element={<Gallery />} />
-               <Route path="/contact" element={<Contact />} />
-               <Route path="/gallery/project/:id" element={<ProjectDetail />} />
+            <Route path="/" element={ <Layout /> }>
+               <Route index element={ <Home /> } />
+               <Route path="/about" element={ <About /> } />
+               <Route path="/gallery" element={ <Gallery /> } />
+               <Route path="/contact" element={ <Contact /> } />
+               <Route path="/gallery/project/:id" element={ <ProjectDetail /> } />
             </Route>
          </Routes>
       </Suspense>
