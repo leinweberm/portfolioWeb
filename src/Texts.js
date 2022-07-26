@@ -1,0 +1,1 @@
+export const pageAdress = 'leinweber.codes';

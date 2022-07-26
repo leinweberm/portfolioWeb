@@ -25,6 +25,13 @@ export default function MobileNav() {
          setNavbarColor(thisNavbarColor);
       }
    };
+   const handleClick = () => {
+      hangleNavbarChange();
+      handleScroll();
+   };
+   const handleScroll = () => {
+      window.scrollTo(0, 0);
+   };
    const hangleNavbarChange = () => {
       setIsNavActive(!isNavActive);
       activeNavbarColor(isNavActive);
@@ -39,16 +46,16 @@ export default function MobileNav() {
             {isNavActive &&
                <MobMenuList>
                   <MobMenuItem>
-                     <MobMenuLink to="/" onClick={hangleNavbarChange}>DOMŮ</MobMenuLink>
+                     <MobMenuLink to="/" onClick={handleClick}>DOMŮ</MobMenuLink>
                   </MobMenuItem>
                   <MobMenuItem>
-                     <MobMenuLink to="/about" onClick={hangleNavbarChange}>INFO</MobMenuLink>
+                     <MobMenuLink to="/about" onClick={handleClick}>INFO</MobMenuLink>
                   </MobMenuItem>
                   <MobMenuItem>
-                     <MobMenuLink to="/gallery" onClick={hangleNavbarChange}>PROJEKTY</MobMenuLink>
+                     <MobMenuLink to="/gallery" onClick={handleClick}>PROJEKTY</MobMenuLink>
                   </MobMenuItem>
                   <MobMenuItem>
-                     <MobMenuLink to="/contact" onClick={hangleNavbarChange}>KONTAKT</MobMenuLink>
+                     <MobMenuLink to="/contact" onClick={handleClick}>KONTAKT</MobMenuLink>
                   </MobMenuItem>
                </MobMenuList >
             }

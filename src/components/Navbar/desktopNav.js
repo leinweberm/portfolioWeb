@@ -11,6 +11,12 @@ export default function DesktopNav() {
       }
    };
    window.addEventListener('scroll', changeNavbarColor);
+   const handleClick = () => {
+      handleScroll();
+   };
+   const handleScroll = () => {
+      window.scrollTo(0, 0);
+   };
 
    return (
       <>
@@ -20,10 +26,10 @@ export default function DesktopNav() {
                   <h1>Leinweber</h1>
                </BrandName>
                <MenuList>
-                  <MenuItem><MenuLink to="/">DOMŮ</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/about">INFO</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/gallery">PROJEKTY</MenuLink></MenuItem>
-                  <MenuItem><MenuLink to="/contact">KONTAKT</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/" onClick={handleClick}>DOMŮ</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/about" onClick={handleClick}>INFO</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/gallery" onClick={handleClick}>PROJEKTY</MenuLink></MenuItem>
+                  <MenuItem><MenuLink to="/contact" onClick={handleClick}>KONTAKT</MenuLink></MenuItem>
                </MenuList>
             </div>
          </Navi>

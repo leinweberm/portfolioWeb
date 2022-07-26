@@ -6,6 +6,7 @@ import { ProjectsDatabase } from './projectsData';
 import { ProjectCard, ProjectCardItem, P, ExternalLink, LinkContainer } from './projectDetailStyles';
 import Carousel from '../Carousel';
 import { useEffect, useState } from 'react';
+import { pageAdress } from '../../Texts';
 const axios = require('axios').default;
 
 export default function ProjectDetail() {
@@ -15,11 +16,11 @@ export default function ProjectDetail() {
    let finalString = '';
    
    const fetchText = async() => {
-      await axios.get(`http://leinweber.codes/textFiles/projectDetail/${project.title}.txt`)
+      await axios.get(`http://${pageAdress}/textFiles/projectDetail/${project.title}.txt`)
       .then((response) => {
             let tempText = response.data.split(/\r?\n/);
             for (let i = 0; i < tempText.length; i++) {
-               finalString += tempText[i] + '\n' + '\n';
+               finalString += tempText[i] + '\n \n';
             }
          })
          .catch((error) => {
@@ -32,7 +33,7 @@ export default function ProjectDetail() {
 
    useEffect(() => {
       fetchText();
-   }, []);
+   });
 
    return (
       <PageContainer>
