@@ -1,25 +1,25 @@
 * {
-  box-sizing: border-box;  
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;  
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  font-size: 1rem;
-  overflow-y: scroll;
+	font-size: 1rem;
+overflow-y: scroll;
 }
 
 body {
-  margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: white;
-  /* overflow: hidden; */
-  /* display: block; */
-  background-color: #0B0C10;
+	margin: 0;
+	font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: white;
+	/* overflow: hidden; */
+	/* display: block; */
+	background-color: #0B0C10;
 }
 p {
-  font-size: 14px;
+	font-size: 14px;
 }
