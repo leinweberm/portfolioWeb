@@ -1,77 +1,78 @@
 import React, { useState, useRef } from 'react'
+
 import { FormContainer, H2, InputLine, SendButton, InputArea, AlertWindow } from './contactStyles';
-import { send} from 'emailjs-com';
+import { send } from 'emailjs-com';
 
 export default function ContactForm() {
-   const [toSend, setToSend] = useState({
-      to_name: 'Martin Leinweber',
-      from_name: '',
-      emailFrom: '',
-      message: '',
-   });
-   const [sendStatus, setSendStatus] = useState(false);
-   const statusTitle = useRef('Email odeslán!');
-   const statusName = useRef('');
-   const statusEmail = useRef('');
-   const statusMessage = useRef('');
-   const statusButton = useRef('OK');
+	const [toSend, setToSend] = useState({
+		to_name: 'Martin Leinweber',
+		from_name: '',
+		emailFrom: '',
+		message: '',
+	});
+	const [sendStatus, setSendStatus] = useState(false);
+	const statusTitle = useRef('Email odeslán!');
+	const statusName = useRef('');
+	const statusEmail = useRef('');
+	const statusMessage = useRef('');
+	const statusButton = useRef('OK');
 
-   const handleChange = (e) => {
-      setToSend({ ...toSend, [e.target.name]: e.target.value });
-   };
+	const handleChange = (e) => {
+		setToSend({ ...toSend, [e.target.name]: e.target.value });
+	};
 
-   const ValidateEmail = (email) => {
-      let emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailCheck.test(email);
-   };
+	const ValidateEmail = (email) => {
+		let emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return emailCheck.test(email);
+	};
 
-   const onSubmit = (e) => {
-      const isEmail = ValidateEmail(toSend.emailFrom);
-      if(isEmail){
-         const isNotEmpty = () => {
-            if(toSend.from_name && toSend.message){
-               send(
-                  'service_tw1qnxw',
-                  'template_u8bv70o',
-                  toSend,
-                  'QQNt5L2bF3-h_QisH'
-               )
-               .then((response) => {
-                  console.log('SUCCESS!', response.status, response.text);
-               })
-               .catch((err) => {
-                  console.log('FAILED...', err);
-               });
-            } else {
-               if(toSend.from_name === ''){
-                  statusName.current = 'prosím vyplňte jméno';
-               }
-               if(toSend.message === ''){
-                  statusMessage.current = 'prosím vyplňte zprávu'
-               }
-               statusTitle.current = 'Odeslání selhalo!';
-               statusButton.current = 'OPRAVIT';
-            }
-         }
-         isNotEmpty();
-      } else {
-         statusEmail.current = 'neplatný formát emailu';
-         statusTitle.current = 'Odeslání selhalo!';
-         statusButton.current = 'OPRAVIT';
-      }
-      setSendStatus(!sendStatus);
-   };  
+	const onSubmit = (e) => {
+		const isEmail = ValidateEmail(toSend.emailFrom);
+		if(isEmail){
+			const isNotEmpty = () => {
+			if(toSend.from_name && toSend.message){
+				send(
+					'service_tw1qnxw',
+					'template_u8bv70o',
+					toSend,
+					'QQNt5L2bF3-h_QisH'
+				)
+				.then((response) => {
+					console.log('SUCCESS!', response.status, response.text);
+				})
+				.catch((err) => {
+					console.log('FAILED...', err);
+				});
+			} else {
+				if(toSend.from_name === ''){
+					statusName.current = 'prosím vyplňte jméno';
+				}
+				if(toSend.message === ''){
+					statusMessage.current = 'prosím vyplňte zprávu'
+				}
+				statusTitle.current = 'Odeslání selhalo!';
+				statusButton.current = 'OPRAVIT';
+			}
+			}
+			isNotEmpty();
+		} else {
+			statusEmail.current = 'neplatný formát emailu';
+			statusTitle.current = 'Odeslání selhalo!';
+			statusButton.current = 'OPRAVIT';
+		}
+		setSendStatus(!sendStatus);
+	};  
 
-   return (
-      <FormContainer>
-         <H2 style={{gridArea: 'title'}}>FORMULÁŘ</H2>
-         <InputLine 
-            style={{gridArea: 'name'}} 
-            type='text' 
-            name='from_name' 
-            placeholder='Jméno' 
-            value={toSend.from_name}
-            onChange={handleChange}>
+	return (
+		<FormContainer>
+			<H2 style={{gridArea: 'title'}}>FORMULÁŘ</H2>
+			<InputLine 
+			style={{gridArea: 'name'}} 
+			type='text' 
+			name='from_name' 
+			placeholder='Jméno' 
+			value={toSend.from_name}
+			onChange={handleChange}>
 			</InputLine>
 			<InputLine 
 				style={{gridArea: 'emailFrom'}} 

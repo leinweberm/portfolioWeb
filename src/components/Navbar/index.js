@@ -3,12 +3,12 @@ import DesktopNav from './desktopNav';
 import MobileNav from './mobileNav';
 
 const Navbar = () => {
-   return (
-      <>
-         <DesktopNav />
-         <MobileNav />
-      </>
-   );
+	return (
+		<>
+			<DesktopNav />
+			<MobileNav />
+		</>
+	);
 };
 
 export default Navbar;

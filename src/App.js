@@ -11,19 +11,19 @@ const ProjectDetail = React.lazy(() => import('./components/Gallery/projectDetai
 
 
 function App() {
-   return (
-      <Suspense fallback={ <Fallback /> }>
-         <Routes>
-            <Route path="/" element={ <Layout /> }>
-               <Route index element={ <Home /> } />
-               <Route path="/about" element={ <About /> } />
-               <Route path="/gallery" element={ <Gallery /> } />
-               <Route path="/contact" element={ <Contact /> } />
-               <Route path="/gallery/project/:id" element={ <ProjectDetail /> } />
-            </Route>
-         </Routes>
-      </Suspense>
-   )
+	return (
+	<Suspense fallback={ <Fallback /> }>
+		<Routes>
+			<Route path="/" element={ <Layout /> }>
+				<Route index element={ <Home /> } />
+				<Route path="/about" element={ <About /> } />
+				<Route path="/gallery" element={ <Gallery /> } />
+				<Route path="/contact" element={ <Contact /> } />
+				<Route path="/gallery/project/:id" element={ <ProjectDetail /> } />
+			</Route>
+		</Routes>
+	</Suspense>
+	)
 }
 
 export default App

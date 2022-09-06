@@ -53,133 +53,133 @@ import toDoList from '../../assets/pictures/projects/toDoList.jpg';
 import ToDoList01 from '../../assets/pictures/carousel/ToDoList/ToDoList01.jpg';
 
 export const ProjectsDatabase = [
-   //Autoskola Smer
-   {
-      id: 1,
-      title: 'Autoškola Směr',
-      description: 'webové stránky, letáky, dárkové kupóny',
-      type: 'coding + design',
-      preview: autoskolaSmer,
-      image: [ 
-         AutoskolaSmer01,
-         AutoskolaSmer02,
-         AutoskolaSmer03,
-         AutoskolaSmer04
-      ],
-      gitHub: 'https://github.com/leinweberm/web-Auto-kola-Sm-r',
-      demo: 'https://leinweberm.github.io/web-Autoskola-Smer/',
-   },
-   {
-      id: 2,
-      title: 'Naučná Stezka',
-      description: 'Hukvaldská stezka na počest L. Janáčka',
-      type: 'design',
-      preview: stezkaLeosJanacek,
-      image: [
-         StezkaJanacek01,
-         StezkaJanacek02,
-         StezkaJanacek03,
-         StezkaJanacek04,
-         StezkaJanacek05,
-         StezkaJanacek06,
-         StezkaJanacek07,
-         StezkaJanacek08,
-         StezkaJanacek09,
-         StezkaJanacek10,
-         StezkaJanacek11
-      ],
-      gitHub: '',
-      demo: ''
-   },
-   {
-      id: 3,
-      title: 'Kulturpunkt 2016',
-      description: 'kulturní festival v Ostravě',
-      type: 'design',
-      preview: kulturpunkt1,
-      image: [
-         Kulturpunkt01,
-         Kulturpunkt02,
-         Kulturpunkt03,
-         Kulturpunkt04,
-         Kulturpunkt05
-      ],
-      gitHub: '',
-      demo: '',
-   },
-   {
-      id: 4,
-      title: 'První cvičný web',
-      description: 'první web dělaný v kurzu (html/css)',
-      type: 'coding + design',
-      preview: prvniWeb,
-      image: [
-         PrvniCvicnyWeb01,
-         PrvniCvicnyWeb02
-      ],
-      gitHub: 'https://github.com/leinweberm/firstWebsite',
-      demo: 'https://leinweberm.github.io/firstWebsite/'
-   },
-   {
-      id: 5,
-      title: 'Zmrzka & Rolka',
-      description: 'kompletní branding',
-      type: 'design',
-      preview: zmrzkaRolka,
-      image: [
-         ZmrzkaRolka01,
-         ZmrzkaRolka02,
-         ZmrzkaRolka03,
-         ZmrzkaRolka04,
-         ZmrzkaRolka05,
-         ZmrzkaRolka06,
-         ZmrzkaRolka07,
-         ZmrzkaRolka10
-      ],
-      gitHub: '',
-      demo: ''
-   },
-   {
-      id: 6,
-      title: 'Můj Web',
-      description: 'moje online webová React prezentace',
-      type: 'coding + design',
-      preview: mujWeb,
-      image: [MujWeb01],
-      gitHub: 'https://github.com/leinweberm/portfolioWeb',
-      demo: ''
-   },
-   {
-      id: 7,
-      title: 'Log In & Sign Up',
-      description: 'přihlášení, registrace uživatelského účtu',
-      type: 'coding',
-      preview: nestJsProject,
-      image: [LogInSignUp01],
-      gitHub: 'https://github.com/leinweberm/Nest.js-LogIn-SingUp',
-      demo: ''
-   },
-   {
-      id: 8,
-      title: 'To do list',
-      description: 'procvičování HTML, CSS a JavaScriptu',
-      type: 'coding',
-      preview: toDoList,
-      image: [ToDoList01],
-      gitHub: 'https://github.com/leinweberm/ToDo-List',
-      demo: 'https://leinweberm.github.io/ToDo-List/'
-   },
-   {
-      id: 9,
-      title: 'Československo 2018',
-      description: 'grafika a ilustrace pro kulturní festival',
-      type: 'design',
-      preview: ceskoslovensko2018,
-      image: [
-         Ceskoslovensko201801,
-         Ceskoslovensko201802
-      ],
-      gitHub: '',
-      demo: ''
-   },
+	//Autoskola Smer
+	{
+		id: 1,
+		title: 'Autoškola Směr',
+		description: 'webové stránky, letáky, dárkové kupóny',
+		type: 'coding + design',
+		preview: autoskolaSmer,
+		image: [ 
+			AutoskolaSmer01,
+			AutoskolaSmer02,
+			AutoskolaSmer03,
+			AutoskolaSmer04
+		],
+		gitHub: 'https://github.com/leinweberm/web-Auto-kola-Sm-r',
+		demo: 'https://leinweberm.github.io/web-Autoskola-Smer/',
+	},
+	{
+		id: 2,
+		title: 'Naučná Stezka',
+		description: 'Hukvaldská stezka na počest L. Janáčka',
+		type: 'design',
+		preview: stezkaLeosJanacek,
+		image: [
+			StezkaJanacek01,
+			StezkaJanacek02,
+			StezkaJanacek03,
+			StezkaJanacek04,
+			StezkaJanacek05,
+			StezkaJanacek06,
+			StezkaJanacek07,
+			StezkaJanacek08,
+			StezkaJanacek09,
+			StezkaJanacek10,
+			StezkaJanacek11
+		],
+		gitHub: '',
+		demo: ''
+	},
+	{
+		id: 3,
+		title: 'Kulturpunkt 2016',
+		description: 'kulturní festival v Ostravě',
+		type: 'design',
+		preview: kulturpunkt1,
+		image: [
+			Kulturpunkt01,
+			Kulturpunkt02,
+			Kulturpunkt03,
+			Kulturpunkt04,
+			Kulturpunkt05
+		],
+		gitHub: '',
+		demo: '',
+	},
+	{
+		id: 4,
+		title: 'První cvičný web',
+		description: 'první web dělaný v kurzu (html/css)',
+		type: 'coding + design',
+		preview: prvniWeb,
+		image: [
+			PrvniCvicnyWeb01,
+			PrvniCvicnyWeb02
+		],
+		gitHub: 'https://github.com/leinweberm/firstWebsite',
+		demo: 'https://leinweberm.github.io/firstWebsite/'
+	},
+	{
+		id: 5,
+		title: 'Zmrzka & Rolka',
+		description: 'kompletní branding',
+		type: 'design',
+		preview: zmrzkaRolka,
+		image: [
+			ZmrzkaRolka01,
+			ZmrzkaRolka02,
+			ZmrzkaRolka03,
+			ZmrzkaRolka04,
+			ZmrzkaRolka05,
+			ZmrzkaRolka06,
+			ZmrzkaRolka07,
+			ZmrzkaRolka10
+		],
+		gitHub: '',
+		demo: ''
+	},
+	{
+		id: 6,
+		title: 'Můj Web',
+		description: 'moje online webová React prezentace',
+		type: 'coding + design',
+		preview: mujWeb,
+		image: [MujWeb01],
+		gitHub: 'https://github.com/leinweberm/portfolioWeb',
+		demo: ''
+	},
+	{
+		id: 7,
+		title: 'Log In & Sign Up',
+		description: 'přihlášení, registrace uživatelského účtu',
+		type: 'coding',
+		preview: nestJsProject,
+		image: [LogInSignUp01],
+		gitHub: 'https://github.com/leinweberm/Nest.js-LogIn-SingUp',
+		demo: ''
+	},
+	{
+		id: 8,
+		title: 'To do list',
+		description: 'procvičování HTML, CSS a JavaScriptu',
+		type: 'coding',
+		preview: toDoList,
+		image: [ToDoList01],
+		gitHub: 'https://github.com/leinweberm/ToDo-List',
+		demo: 'https://leinweberm.github.io/ToDo-List/'
+	},
+	{
+		id: 9,
+		title: 'Československo 2018',
+		description: 'grafika a ilustrace pro kulturní festival',
+		type: 'design',
+		preview: ceskoslovensko2018,
+		image: [
+			Ceskoslovensko201801,
+			Ceskoslovensko201802
+		],
+		gitHub: '',
+		demo: ''
+	},
 ];
